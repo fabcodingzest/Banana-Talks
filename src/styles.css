@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+:root {
+  --theme-color: rgb(247, 211, 8);
+  --theme-light: rgb(228, 190, 24);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+#header,
+#footer {
+  height: 14vh;
+  background-color: var(--theme-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+#footer {
+  height: 22vh;
+}
+
+#about-para {
+  font-size: clamp(0.7rem, 1.8vw, 1.2rem);
+  color: dimgrey;
+}
+
+#translator {
+  height: 64vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  outline-color: var(--theme-light);
+  padding: 0.4rem;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 0.8rem;
+  height: 150px;
+}
+
+#translated-text {
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  height: 100px;
+  border: 1px solid #000;
+  width: 100%;
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+button {
+  margin: 1rem 0;
+  padding: 0.8rem 2rem;
+  border-radius: 0.2rem;
+  border: none;
+  background: var(--theme-color);
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background: var(--theme-light);
+}

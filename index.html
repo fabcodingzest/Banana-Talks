@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Banana Talks</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="container">Banana Talks</h1>
+    </header>
+
+    <div id="translator" class="container">
+      <textarea
+        id="english-text"
+        placeholder="Enter the message you want to translate..."
+      ></textarea>
+      <button>Translate to Yoda</button>
+      <p>
+        Translation will come here
+        <span role="img" aria-labelledby="Hand down">
+          👇
+        </span>
+      </p>
+      <div id="translated-text"></div>
+    </div>
+
+    <footer id="footer">
+      <div class="container">
+        <h2>About</h2>
+        <p id="about-para">
+          Are you a fan of minions? Did you know that the gibberish they say is
+          an actual language. Use the translator to convert your text from
+          English to Minion speak or Banana language.
+          <span role="img" aria-labelledby="lit">
+            🔥
+          </span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
